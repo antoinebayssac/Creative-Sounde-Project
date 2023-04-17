@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistreur de voix</title>
+    <style>
+        button {
+            margin: 10px;
+        }
+        .words {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .animate {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Enregistreur de voix</h1>
+    <button id="startRecognition">Démarrer la reconnaissance</button>
+    <button id="stopRecognition" disabled>Arrêter la reconnaissance</button>
+    <div class="words">
+        <h1>Epellé un des 5 mots : </h1>
+        <p id="word1">Mot 1: Chat</p>
+        <p id="word2">Mot 2: Chien</p>
+        <p id="word3">Mot 3: Soleil</p>
+        <p id="word4">Mot 4: Lune</p>
+        <p id="word5">Mot 5: Étoile</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
